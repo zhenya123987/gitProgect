@@ -28,7 +28,7 @@ class Example(QWidget):
 
     def draw_circle(self):
         x, y, r = random.randint(1, 500), random.randint(1, 500), random.randint(10, 200)
-        self.qp.setBrush(QColor(255, 255, 0))
+        self.qp.setBrush(QColor(random.randint(0, 255), random.randint(0, 255), random.randint(0, 255)))
         self.qp.drawEllipse(x, y, r, r)
 
 
